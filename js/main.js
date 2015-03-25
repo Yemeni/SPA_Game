@@ -16,7 +16,7 @@ var tileGroup = new app.TileGroup(tile); // putting all the tiles inside tile gr
 var tileGroupView = new app.allTileView({ collection: tileGroup}); // view for all tiles
 $("#draw-tile-map").html(tileGroupView.render().el);
 
-//view.listenTo(game || res, 'change', view.render); // instead of this.render() >> view.render() on each function
+//view.listenTo(tile , 'change', view.render); // instead of this.render() >> view.render() on each function
 
 //var tileRouter = new app.TileInfoRouter({});
 //Backbone.history.start();

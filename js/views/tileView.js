@@ -18,7 +18,8 @@ app.TileView = Backbone.View.extend({
 	events: {
 	'mouseover': 'addBgColor',
 	'mouseout': 'removeBgColor',
-	'click' : 'showTileInfo'
+	'click' : 'showTileInfo',
+	'click #Upgrade' : 'upgradeTile'
 	},
 
 	addBgColor: function() {
@@ -33,6 +34,9 @@ app.TileView = Backbone.View.extend({
 		var TileInfoTemplate = this.infoTemplate(this.model.toJSON());
 		$("#draw-tile-info").html(TileInfoTemplate);
 		return this;
-		//$("#draw-tile-info").html("Test 99");
+	},
+	
+	upgradeTile : function(){
+		console.log("upgraded");
 	}
 });
