@@ -18,5 +18,5 @@ $("#draw-tile-map").html(tileGroupView.render().el);
 
 //view.listenTo(game || res, 'change', view.render); // instead of this.render() >> view.render() on each function
 
-var tileRouter = new app.TileInfoRouter({});
-Backbone.history.start();
+//var tileRouter = new app.TileInfoRouter({});
+//Backbone.history.start();

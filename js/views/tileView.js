@@ -13,10 +13,12 @@ app.TileView = Backbone.View.extend({
 	return this;
 	},
 
+	infoTemplate: _.template( $("#build-tile-info").html() ),
+
 	events: {
 	'mouseover': 'addBgColor',
 	'mouseout': 'removeBgColor',
-	'onclick' : 'showTileInfo'
+	'click' : 'showTileInfo'
 	},
 
 	addBgColor: function() {
@@ -28,6 +30,9 @@ app.TileView = Backbone.View.extend({
 	},
 	
 	showTileInfo: function(){
-		
+		var TileInfoTemplate = this.infoTemplate(this.model.toJSON());
+		$("#draw-tile-info").html(TileInfoTemplate);
+		return this;
+		//$("#draw-tile-info").html("Test 99");
 	}
 });

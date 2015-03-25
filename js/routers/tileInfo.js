@@ -26,7 +26,7 @@ for(var i = 0; i <= 20; i++){
 } // end for
 app.TileInfoRouter.prototype.routes = route;
 
-// intiliaize the routes functions automaticly
+/* intiliaize the routes functions automaticly
 console.log("intiliaize the routes functions automaticly");
 var functions = {};
 for(var i = 0; i <= 20; i++){
@@ -36,3 +36,4 @@ for(var i = 0; i <= 20; i++){
 } // end for
 //app.TileInfoRouter.prototyp.push("Kiwi" : "");
 
+*/
