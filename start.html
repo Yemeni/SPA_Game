@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/tile.css" rel="stylesheet">
+		<title>MYGAME </title>
+	</head>
+	<body>
+		
+		<section id="game">
+			<div id="draw-main-info"></div>
+			<div id="draw-tile-map"></div>
+			<div id="draw-tile-info"></div>
+											
+		</section>
+		
+		<script id="build-main-info" type="text/template">
+			<div class="panel panel-primary">
+			  <div class="panel-heading">
+				<h3 class="panel-title">Main Panel</h3>
+			  </div>
+			  <div class="panel-body">
+				<p>Hello , <%= name %> </p>
+				<% if(main.get("name") == "Anynomos" ) { %>
+					<p>NAME IS Anynomos :D</p>
+				<% } %>
+				<p>Day : <%= day %> </p>
+				<p>Settlers : <%= settlers %> / <%= max_settlers %></p>
+				<p>Workers : <%= workers %> </p>
+				
+				<p>Wood : <%= wood %></p>
+				<p>Stone : <%= stone %></p>
+				
+				<p>Storage : <%= storage %> / <%= max_storage %></p>
+			  </div>
+			</div>
+		</script>
+		
+		<script id="build-tile-map" type="text/template">
+			<a href="#<%= link %>">
+				<p>Tile : <%= number %> , <%= name %></p>
+				<img id="<%= number %>" src="<%= img %>" class="tile"/>
+			</a>
+			<br/>
+		</script>
+		
+		<script id="build-tile-empty" type="text/template">
+			<p>empty tile *coords*, what do you want to build</p>
+
+		</script>
+		
+		<script id="build-tile-info" type="text/template">
+			<p>Selected tile : <%= number %> , <%= name %> </p>
+			<p>input : *input*</p>
+			<p>output : *output*</p>
+			<p>Cost Upgrade : </p>
+			<p>Workers : <%= cost_workers %></p>
+			<p>Wood : <%= cost_wood %></p>
+			<p>Stone : <%= cost_stone %></p>
+			<a href="#" id="Upgrade" class="btn btn-default">Upgrade »</a>
+		</script>
+		
+		
+		<script src="js/lib/jquery-1.9.0.js"></script>
+		<script src="js/lib/jquery-ui-1.10.0.custom.js"></script>
+		<script src="js/lib/jquery-dateFormat-1.0.js"></script>
+		<script src="js/lib/underscore.js"></script>
+		<script src="js/lib/backbone.js"></script>	
+		
+		<script src="js/models/controller.js"></script>
+		<script src="js/views/controllerView.js"></script>
+		
+		<script src="js/models/tile.js"></script>
+		<script src="js/collections/tileCollection.js"></script>
+		<script src="js/views/tileView.js"></script>
+		<script src="js/views/allTileView.js"></script>
+
+		<script src="js/routers/tileInfo.js"></script>
+		
+		<script src="js/main.js"></script>
+ 
+    </body>
+</html>

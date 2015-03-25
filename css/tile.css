@@ -1,0 +1,49 @@
+#draw-main-info {
+    padding: 20px;
+    margin: 0px auto;
+	margin-bottom: 10px;
+    text-align: center;
+    width: 90%;
+    background-color: #E0E0E0;
+    border: 1px solid #C69;
+}
+
+#draw-tile-map {
+    padding: 20px;
+    margin: 0px 2%;
+    text-align: center;
+    width: 850px;
+    background-color: #E0E0E0;
+    border: 1px solid #C69;
+	float: left;
+}
+
+.tile {
+    display: inline-block;
+    margin: 0px 10px;
+    list-style-type: none;
+}
+
+#draw-tile-info {
+    padding: 20px;
+    margin: 0px 2%;
+    text-align: center;
+    width: 350px;
+    background-color: #E0E0E0;
+    border: 1px solid #C69;
+	position: relative;
+	float: left;
+
+}
+
+#game{
+	width: 1340px;
+}
+
+.panel-body p{
+	color : green;
+	float : left;
+	border-style: solid;
+    border-width: 5px;
+	border-color: blue;
+}
