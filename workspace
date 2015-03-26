@@ -1,1 +1,43 @@
-<NotepadPlus />
+<NotepadPlus>
+    <Project name="final">
+        <Folder name="css">
+            <File name="css\bootstrap.min.css" />
+            <File name="css\tile.css" />
+        </Folder>
+        <Folder name="images">
+            <File name="images\tile_empty.gif" />
+            <File name="images\tile_stone.gif" />
+            <File name="images\tile_wood.gif" />
+        </Folder>
+        <Folder name="js">
+            <Folder name="collections">
+                <File name="js\collections\tileCollection.js" />
+            </Folder>
+            <Folder name="lib">
+                <File name="js\lib\backbone.js" />
+                <File name="js\lib\jquery-1.9.0.js" />
+                <File name="js\lib\jquery-dateFormat-1.0.js" />
+                <File name="js\lib\jquery-ui-1.10.0.custom.js" />
+                <File name="js\lib\underscore.js" />
+            </Folder>
+            <Folder name="models">
+                <File name="js\models\controller.js" />
+                <File name="js\models\tile.js" />
+            </Folder>
+            <Folder name="routers">
+                <File name="js\routers\tileInfo.js" />
+            </Folder>
+            <Folder name="views">
+                <File name="js\views\allTileView.js" />
+                <File name="js\views\controllerView.js" />
+                <File name="js\views\tileInfoView.js" />
+                <File name="js\views\tileView.js" />
+            </Folder>
+            <File name="js\main.js" />
+        </Folder>
+        <File name=".gitattributes" />
+        <File name=".gitignore" />
+        <File name="start.html" />
+        <File name="workspace" />
+    </Project>
+</NotepadPlus>

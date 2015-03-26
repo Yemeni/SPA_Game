@@ -8,7 +8,6 @@ app.TileInfoView = Backbone.View.extend({
 	
 	render: function() {
 		var info_template= this.template(this.model.toJSON());
-		//var renTemp = this.template(); //this.model.toJSON()
 		this.$el.html(info_template);
 		return this;
 	  },

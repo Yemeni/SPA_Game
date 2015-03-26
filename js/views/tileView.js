@@ -31,6 +31,7 @@ app.TileView = Backbone.View.extend({
 	},
 	
 	showTileInfo: function(){
+		console.log("clicked tile");
 		var TileInfoTemplate = this.infoTemplate(this.model.toJSON());
 		$("#draw-tile-info").html(TileInfoTemplate);
 		return this;
