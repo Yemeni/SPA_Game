@@ -52,34 +52,34 @@
 			<p>Selected tile : <%= number %> , <%= name %> </p>
 			<% if(name == "Empty tile") { %>
 				<p>This is an empty tile,<br/>Upgrade this tile to : </p>
+				<a id="Upgrade" class="btn btn-default">Wood Cutter »</a>
+				<a id="Upgrade" class="btn btn-default">Wood Sawmill »</a>
 				<a id="UpgradeToMason" class="btn btn-default">Mason »</a>
-				<a id="Upgrade" class="btn btn-default">Upgrade »</a>
-				<a id="Upgrade" class="btn btn-default">Upgrade »</a>
 			<% } %>
 			
-			<p>Inputs : </p>
 			<% if(require_wood > 0){ %>
-				<p>Wood : <%= require_wood %></p>
+				<p>Consumes Wood : <%= require_wood %></p>
 			<% } %>
 			
 			<% if(require_stone > 0){ %>
-				<p>Stone : <%= require_stone %></p>
+				<p>Consumes Stone : <%= require_stone %></p>
 			<% } %>
-			<hr/>
-			<p>Outpus : </p>
+			
 			<% if(produce_wood > 0){ %>
-				<p>Wood : <%= produce_wood %></p>
+				<p>Produce Wood : <%= produce_wood %></p>
 			<% } %>
 			
 			<% if(produce_stone > 0){ %>
-				<p>Stone : <%= produce_stone %></p>
+				<p>Produce Stone : <%= produce_stone %></p>
 			<% } %>
-			<hr/>
+			
 			<% if(cost_workers > 0){ %>
-				<p>Workers : <%= cost_workers %></p>
+				<p>Required Workers : <%= cost_workers %></p>
 			<% } %>
 
+			<% if(name != "Empty tile") { %>
 			<a id="Upgrade" class="btn btn-default">Upgrade »</a>
+			<% } %>
 		</script>
 		
 		
