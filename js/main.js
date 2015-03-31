@@ -12,6 +12,13 @@ for(var i = 0; i <= 20 ; i++){
 	});
 }
 // end of creating 20 tiles
+
+// create different types of tile /  buildings
+var mason = new app.Building({
+	name : "Mason",
+});
+
+//
 var selectedTile = new app.SelectedTile({model : tile[0]});
 
 var tileGroup = new app.TileGroup(tile); // putting all the tiles inside tile group ^__^
