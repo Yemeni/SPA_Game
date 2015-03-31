@@ -57,12 +57,28 @@
 				<a id="Upgrade" class="btn btn-default">Upgrade »</a>
 			<% } %>
 			
-			<p>input : *input*</p>
-			<p>output : *output*</p>
-			<p>Cost Upgrade : </p>
-			<p>Workers : <%= cost_workers %></p>
-			<p>Wood : <%= cost_wood %></p>
-			<p>Stone : <%= cost_stone %></p>
+			<p>Inputs : </p>
+			<% if(require_wood > 0){ %>
+				<p>Wood : <%= require_wood %></p>
+			<% } %>
+			
+			<% if(require_stone > 0){ %>
+				<p>Stone : <%= require_stone %></p>
+			<% } %>
+			<hr/>
+			<p>Outpus : </p>
+			<% if(produce_wood > 0){ %>
+				<p>Wood : <%= produce_wood %></p>
+			<% } %>
+			
+			<% if(produce_stone > 0){ %>
+				<p>Stone : <%= produce_stone %></p>
+			<% } %>
+			<hr/>
+			<% if(cost_workers > 0){ %>
+				<p>Workers : <%= cost_workers %></p>
+			<% } %>
+
 			<a id="Upgrade" class="btn btn-default">Upgrade »</a>
 		</script>
 		

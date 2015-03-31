@@ -16,6 +16,7 @@ for(var i = 0; i <= 20 ; i++){
 // create different types of tile /  buildings
 var mason = new app.Building({
 	name : "Mason",
+	produce_stone : 1
 });
 
 //
