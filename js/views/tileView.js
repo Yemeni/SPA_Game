@@ -18,7 +18,7 @@ app.TileView = Backbone.View.extend({
 	events: {
 	'mouseover': 'addBgColor',
 	'mouseout': 'removeBgColor',
-	'click' : 'showTileInfo',
+	'click' : 'showSelectedTile',
 	'click #Upgrade' : 'upgradeTile'
 	},
 
@@ -30,11 +30,13 @@ app.TileView = Backbone.View.extend({
 	this.$el.removeClass("bgColorImage");
 	},
 	
-	showTileInfo: function(){
-		console.log("clicked tile");
-		var TileInfoTemplate = this.infoTemplate(this.model.toJSON());
-		$("#draw-tile-info").html(TileInfoTemplate);
-		return this;
+	showSelectedTile: function(){
+		console.log("clicked showSelectedTile");
+		selectedTile = new app.SelectedTile({model : this.model});
+		$("#draw-tile-info").html(selectedTile.render().el);
+		//var TileInfoTemplate = this.infoTemplate(this.model.toJSON());
+		//$("#draw-tile-info").html(TileInfoTemplate);
+		//return this;
 	},
 	
 	upgradeTile : function(){

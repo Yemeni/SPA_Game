@@ -12,9 +12,13 @@ for(var i = 0; i <= 20 ; i++){
 	});
 }
 // end of creating 20 tiles
+var selectedTile = new app.SelectedTile({model : tile[0]});
+
 var tileGroup = new app.TileGroup(tile); // putting all the tiles inside tile group ^__^
 var tileGroupView = new app.allTileView({ collection: tileGroup}); // view for all tiles
 $("#draw-tile-map").html(tileGroupView.render().el);
+
+
 
 //view.listenTo(tile , 'change', view.render); // instead of this.render() >> view.render() on each function
 
