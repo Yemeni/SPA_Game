@@ -7,8 +7,9 @@ app.Building = Backbone.Model.extend({
 	},
 	defaults : {
 		name : "Empty tile",
-		img : "images/tile_empty.gif",
-				
+		//img : "images/Mason_Level_1.png",
+		level : 0,
+		tier : 0,
 		cost_workers : 0,
 		cost_wood : 0,
 		cost_stone : 0,

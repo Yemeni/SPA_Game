@@ -12,5 +12,23 @@ app.ControllerView = Backbone.View.extend({
 		this.$el.html(controller_template);
 		return this;
 	  },
+	  
+	events: {
+		'click #next-day': 'nextDay'
+	},
+	
+	nextDay: function(){
+		main.set('day' ,main.get('day') + 1 );
+
+		$.each(tile, function( index, value ){
+			if(tile[index].get('tier') == 1){
+				main.set('stone', main.get('stone') + tile[index].get('produce_stone') );
+				main.set('wood', main.get('wood') + tile[index].get('produce_wood') );
+			}
+		});
+		
+		mainView.render();
+		//main.set('stone' ,main.get('day')  )
+	}
 
 });

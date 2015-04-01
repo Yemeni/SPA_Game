@@ -7,9 +7,10 @@ app.Tile = Backbone.Model.extend({
 	},
 	defaults : {
 		name : "Empty tile",
-		img : "images/tile_empty.gif",
+		img : "images/2x2.png",
 		number : 0,
-		
+		tier : 0,
+		level: 0,
 		
 		cost_workers : 0,
 		cost_wood : 0,
@@ -21,6 +22,8 @@ app.Tile = Backbone.Model.extend({
 		produce_wood : 0,
 		produce_stone : 0,
 		
+		max_storage: 0,
+		max_settlers: 0
 	}
 	
 });

@@ -23,21 +23,28 @@
 			  </div>
 			  <div class="panel-body">
 				<p>Hello , <%= name %> </p>
-				<p>Day : <%= day %> </p>
-				<p>Settlers : <%= settlers %> / <%= max_settlers %></p>
-				<p>Workers : <%= workers %> </p>
+				<p id="res-day"><p>Day : <%= day %> </p>
+				<p id="res-settlers"><p>Settlers : <%= settlers %> / <%= max_settlers %></p>
+				<p id="res-settlers"><p>Workers : <%= workers %> </p>
 				
-				<p>Wood : <%= wood %></p>
-				<p>Stone : <%= stone %></p>
+				<p id="res-wood"></p><p>Wood : <%= wood %></p>
+				<p id="res-stone"></p><p>Stone : <%= stone %></p>
 				
-				<p>Storage : <%= storage %> / <%= max_storage %></p>
+				<p id="res-storage"></p><p>Storage : <%= storage %> / <%= max_storage %></p>
+				
+				<a id="next-day" class="btn btn-default">Next Day »</a>
 			  </div>
 			</div>
 		</script>
 		
 		<script id="build-tile-map" type="text/template">
 			<a href="#<%= link %>">
-				<p>Tile : <%= number %> , <%= name %></p>
+				<p><%= name %>
+					<% if(name == "Empty tile") { %>
+						</p>
+					<% }else{ %>	
+						Lvl : <%= level %></p>
+					<% } %>
 				<img id="<%= number %>" src="<%= img %>" class="tile"/>
 			</a>
 			<br/>
@@ -49,12 +56,14 @@
 		</script>
 		
 		<script id="build-tile-info" type="text/template">
-			<p>Selected tile : <%= number %> , <%= name %> </p>
+			<p>Tile Number : <%= number %> , Type : <%= name %> </p>
 			<% if(name == "Empty tile") { %>
 				<p>This is an empty tile,<br/>Upgrade this tile to : </p>
-				<a id="Upgrade" class="btn btn-default">Wood Cutter »</a>
-				<a id="Upgrade" class="btn btn-default">Wood Sawmill »</a>
-				<a id="UpgradeToMason" class="btn btn-default">Mason »</a>
+				<a id="upgrade-to-storage" class="btn btn-default">Storage »</a>
+				<a id="upgrade-to-residence" class="btn btn-default">Residence »</a>
+				<a id="upgrade-to-wood-cutter" class="btn btn-default">Wood Cutter »</a>
+				<a id="Upgrade-to-wood-swamill" class="btn btn-default">Wood Sawmill »</a>
+				<a id="upgrade-to-mason" class="btn btn-default">Mason »</a>
 			<% } %>
 			
 			<% if(require_wood > 0){ %>
@@ -102,7 +111,6 @@
 		
 		<script src="js/routers/tileInfo.js"></script>
 		
-		<script src="js/functions.js"></script>
 		<script src="js/main.js"></script>
  
     </body>

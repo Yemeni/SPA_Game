@@ -15,7 +15,10 @@ app.SelectedTile = Backbone.View.extend({
 	  
 	events: {
 		'click #Upgrade': 'upgradeTile',
-		'click #UpgradeToMason' : 'upgradeToMason'
+		'click #upgrade-to-mason' : 'upgradeToMason',
+		'click #upgrade-to-wood-cutter' : 'upgradeToWoodCutter',
+		'click #upgrade-to-residence' : 'upgradeToResidence',
+		'click #upgrade-to-storage' : 'upgradeToStorage'
 	},
 	
 	upgradeTile : function(){
@@ -33,11 +36,38 @@ app.SelectedTile = Backbone.View.extend({
 		
 	},
 	
-	updateAllTiles : function(){
+	upgradeToWoodCutter : function(){
+		var tilenum = this.model.get('number');
+		self.tile[tilenum].set(wood_cutter.attributes);
+		console.log("upgraded " + selectedTile.model.get('number') + " to wood_cutter ");
+		this.updateAllTiles();
+
+	},
 	
+	upgradeToResidence : function(){
+		var tilenum = this.model.get('number');
+		self.tile[tilenum].set(residence.attributes);
+		main.set('max_settlers', main.get('max_settlers') + tile[tilenum].get('max_settlers') );
+		console.log("upgraded " + selectedTile.model.get('number') + " to residence ");
+		this.updateAllTiles();
+
+	},
+	
+	upgradeToStorage : function(){
+		var tilenum = this.model.get('number');
+		self.tile[tilenum].set(storage.attributes);
+		main.set('max_storage', main.get('max_storage') + tile[tilenum].get('max_storage') );
+		console.log("upgraded " + selectedTile.model.get('number') + " to storage ");
+		this.updateAllTiles();
+
+	},
+	
+	updateAllTiles : function(){
+		
 		this.render();
 		tileGroupView = new app.allTileView({ collection: tileGroup}); // view for all tiles
 		$("#draw-tile-map").html(tileGroupView.render().el);
+		mainView.render();
 	}
 	
 	

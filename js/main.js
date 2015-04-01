@@ -5,7 +5,7 @@ $("#draw-main-info").html(mainView.render().el);
 
 // create 20 tile models in an array
 var tile = []; 
-for(var i = 0; i <= 20 ; i++){
+for(var i = 0; i <= 24 ; i++){
 	tile[i] = new app.Tile({
 		number : i,
 		link : "tile"+i
@@ -16,7 +16,35 @@ for(var i = 0; i <= 20 ; i++){
 // create different types of tile /  buildings
 var mason = new app.Building({
 	name : "Mason",
-	produce_stone : 1
+	produce_stone : 1,
+	img : "images/Mason_Level_1.png",
+	level : 1,
+	tier : 1
+});
+
+var wood_cutter = new app.Building({
+	name : "Wood Cutter",
+	produce_wood : 1,
+	img : "images/Pinewood_Cutter_Level_1.png",
+	level : 1,
+	tier : 1
+});
+
+var residence = new app.Building({
+	name : "Residence",
+	img : "images/Pinewood_Cutter_Level_1.png",
+	level : 1,
+	tier : 1,
+	max_settlers: 10
+	
+});
+
+var storage = new app.Building({
+	name : "Storage",
+	img : "images/Pinewood_Cutter_Level_1.png",
+	level : 1,
+	tier : 1,
+	max_storage: 100,
 });
 
 //
