@@ -22,20 +22,23 @@
 				<h3 class="panel-title">Main Panel</h3>
 			  </div>
 			  <div class="panel-body">
-				
-				<p>Hello , <%= name %> </p>
-				<p id="res-day"><p>Day : <%= day %> </p>
-				<p id="res-settlers"><p>Settlers : <%= settlers %> / <%= max_settlers %></p>
-				<p id="res-settlers"><p>Workers : <%= workers %> </p>
-				
-				<p id="res-wood"></p><p>Wood : <%= wood %></p>
-				<p id="res-stone"></p><p>Stone : <%= stone %></p>
-				
-				<p id="res-storage"></p><p>Storage : <%= storage %> / <%= max_storage %></p>
-				
-				<p id="res-planks"></p><p>planks : <%= planks %></p>
-				
-				<a id="next-day" class="btn btn-default">Next Day »</a>
+				<div class="mainElements">
+					<p>Hello , <%= name %> </p>
+				</div>
+				<div class="mainElements">
+					<p id="res-day"><p>Day : <%= day %> </p>
+					<p id="res-settlers"><p>Settlers : <%= settlers %> / <%= max_settlers %></p>
+					<p id="res-settlers"><p>Workers : <%= workers %> </p>
+					<p id="res-storage"></p><p>Storage : <%= storage %> / <%= max_storage %></p>
+				</div>
+				<div class="mainElements">	
+					<p id="res-wood"></p><p>Wood : <%= wood %></p>
+					<p id="res-stone"></p><p>Stone : <%= stone %></p>
+				</div>
+				<div class="mainElements">
+					<p id="res-planks"></p><p>planks : <%= planks %></p>
+				</div>	
+					<a id="next-day" class="btn btn-default">Next Day »</a>
 			  </div>
 			</div>
 		</script>
@@ -65,7 +68,7 @@
 				<a id="upgrade-to-storage" class="btn btn-default">Storage »</a>
 				<a id="upgrade-to-residence" class="btn btn-default">Residence »</a>
 				<a id="upgrade-to-wood-cutter" class="btn btn-default">Wood Cutter »</a>
-				<a id="Upgrade-to-wood-swamill" class="btn btn-default">Wood Sawmill »</a>
+				<a id="upgrade-to-wood-swamill" class="btn btn-default">Wood Sawmill »</a>
 				<a id="upgrade-to-mason" class="btn btn-default">Mason »</a>
 			<% } %>
 			

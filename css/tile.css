@@ -24,7 +24,7 @@
 	height: 46px;
 }
 #draw-tile-map p{
-	width: 120px;
+	width: 125px;
 	font-size:bold;
 }
 
@@ -92,4 +92,10 @@
 }
 .tile a{
 	color:black;
+}
+
+.mainElements{
+	float: left;
+	position: relative;
+	padding-left: 20px;
 }
