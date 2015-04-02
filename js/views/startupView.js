@@ -34,7 +34,7 @@ app.StartUpView = Backbone.View.extend({
 		$('#draw-game-startup').removeClass('startup');
 		tileGroupView = new app.allTileView({ collection: tileGroup}); // view for all tiles
 		$("#draw-tile-map").html(tileGroupView.render().el);
-		mainView.render();
+		mainView.nextDay();
 		this.remove();
 	}
 

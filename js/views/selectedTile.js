@@ -56,6 +56,108 @@ app.SelectedTile = Backbone.View.extend({
 			self.tile[tilenum].set('max_settlers', Math.round(self.tile[tilenum].get('max_settlers')*2.2));
 			main.set('max_settlers', main.get('max_settlers') + tile[tilenum].get('max_settlers') );
 			
+			var name = tile[tilenum].get('name');
+			var level = tile[tilenum].get('level');
+			switch(name){
+				case "Wood Cutter":
+					switch(level){
+						case 3 :
+						tile[tilenum].set('img' , 'images/Pinewood_Cutter_Level_2.png');
+						break;
+						
+						case 5 :
+						tile[tilenum].set('img' , 'images/Pinewood_Cutter_Level_3.png');
+						break;
+						
+						case 7 :
+						tile[tilenum].set('img' , 'images/Pinewood_Cutter_Level_4.png');
+						break;
+						
+						case 9 :
+						tile[tilenum].set('img' , 'images/Pinewood_Cutter_Level_5.png');
+						break;
+					}
+				break;
+				case "Mason":
+					switch(level){
+						case 3 :
+						tile[tilenum].set('img' , 'images/Mason_Level_2.png');
+						break;
+						
+						case 5 :
+						tile[tilenum].set('img' , 'images/Mason_Level_3.png');
+						break;
+						
+						case 7 :
+						tile[tilenum].set('img' , 'images/Mason_Level_4.png');
+						break;
+						
+						case 9 :
+						tile[tilenum].set('img' , 'images/Mason_Level_5.png');
+						break;
+					}
+				break;
+				case "Wood Swamill":
+					switch(level){
+						case 3 :
+						tile[tilenum].set('img' , 'images/Pinewood_Sawmill_Level_2.png');
+						break;
+						
+						case 5 :
+						tile[tilenum].set('img' , 'images/Pinewood_Sawmill_Level_3.png');
+						break;
+						
+						case 7 :
+						tile[tilenum].set('img' , 'images/Pinewood_Sawmill_Level_4.png');
+						break;
+						
+						case 9 :
+						tile[tilenum].set('img' , 'images/Pinewood_Sawmill_Level_5.png');
+						break;
+					}
+				break;
+				
+				case "Storage":
+					switch(level){
+						case 3 :
+						tile[tilenum].set('img' , 'images/Storehouse_Level_2.png');
+						break;
+						
+						case 5 :
+						tile[tilenum].set('img' , 'images/Storehouse_Level_3.png');
+						break;
+						
+						case 7 :
+						tile[tilenum].set('img' , 'images/Storehouse_Level_4.png');
+						break;
+						
+						case 9 :
+						tile[tilenum].set('img' , 'images/Storehouse_Level_5.png');
+						break;
+					}
+				break;
+				
+				case "Residence":
+					switch(level){
+						case 3 :
+						tile[tilenum].set('img' , 'images/Residence_Level_2.png');
+						break;
+						
+						case 5 :
+						tile[tilenum].set('img' , 'images/Residence_Level_3.png');
+						break;
+						
+						case 7 :
+						tile[tilenum].set('img' , 'images/Residence_Level_4.png');
+						break;
+						
+						case 9 :
+						tile[tilenum].set('img' , 'images/Residence_Level_5.png');
+						break;
+					}
+				break;
+			}
+			
 			console.log("upgraded " + selectedTile.model.get('number'));
 		}
 		this.updateAllTiles();
