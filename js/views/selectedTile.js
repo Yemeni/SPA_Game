@@ -14,7 +14,8 @@ app.SelectedTile = Backbone.View.extend({
 	  },
 	  
 	events: {
-		'click #Upgrade': 'upgradeTile',
+		'click #upgrade': 'upgradeTile',
+		'click #destroy': 'destroyTile',
 		'click #upgrade-to-mason' : 'upgradeToMason',
 		'click #upgrade-to-wood-cutter' : 'upgradeToWoodCutter',
 		'click #upgrade-to-residence' : 'upgradeToResidence',
@@ -23,6 +24,16 @@ app.SelectedTile = Backbone.View.extend({
 	
 	upgradeTile : function(){
 		console.log("upgraded " + selectedTile.model.get('number'));
+		
+	},
+	
+	destroyTile : function(){
+		var tilenum = this.model.get('number');
+		main.set('max_storage',main.get('max_storage') - self.tile[tilenum].get('max_storage'));
+		main.set('max_settlers',main.get('max_settlers') - self.tile[tilenum].get('max_settlers'));
+		self.tile[tilenum].set(empty_tile.attributes);
+		this.updateAllTiles();
+		console.log("removed " + selectedTile.model.get('number'));
 		
 	},
 	

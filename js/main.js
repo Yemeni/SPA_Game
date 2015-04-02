@@ -14,6 +14,9 @@ for(var i = 0; i <= 24 ; i++){
 // end of creating 20 tiles
 
 // create different types of tile /  buildings
+var empty_tile = new app.Building({
+
+});
 var mason = new app.Building({
 	name : "Mason",
 	produce_stone : 1,
