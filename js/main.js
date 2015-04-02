@@ -1,5 +1,9 @@
 //var app = app || {};
 var main = new app.Controller({});
+
+var startView = new app.StartUpView({model : main});
+$("#draw-game-startup").html(startView.render().el);
+
 var mainView = new app.ControllerView({ model : main});
 $("#draw-main-info").html(mainView.render().el);
 

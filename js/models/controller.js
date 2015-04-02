@@ -26,9 +26,9 @@ app.Controller = Backbone.Model.extend({
 		workers : 0,
 		
 		// resource
-		wood: 99990,
-		stone : 9990,
-		planks : 9990,
+		wood: 0,
+		stone : 0,
+		planks : 0,
 		
 		storage: 0,
 		max_storage: 0

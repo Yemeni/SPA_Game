@@ -1,3 +1,11 @@
+.startup{
+	margin: 0px auto;
+	background-color: #E0E0E0;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+}
 #draw-main-info {
     padding: 20px;
     margin: 0px auto;

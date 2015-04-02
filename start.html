@@ -10,11 +10,28 @@
 	<body>
 		
 		<section id="game">
+			<div id="draw-game-startup" class="startup"></div>
 			<div id="draw-main-info"></div>
 			<div id="draw-tile-map"></div>
 			<div id="draw-tile-info"></div>
 											
 		</section>
+		
+		<script id="build-game-startup" type="text/template">	
+			<center>
+			<p>Hi, welcome to Island Dominator browser game SPA style</p>
+			<p>Please enter your name and starting conditions : </p>
+			Name : <input id="player-name" type="text"/>
+			<br/>
+			Starting wood : <input id="starting-wood" type="number"/>
+			<br/>
+			Starting stone : <input id="starting-stone" type="number"/>
+			<br/>
+			Starting planks : <input id="starting-planks" type="number"/>
+			<br/>
+			<a id="submit-info" class="btn btn-sucess">Submit »</a>
+			</center>
+		</script>
 		
 		<script id="build-main-info" type="text/template">
 			<div class="panel panel-primary">
@@ -54,11 +71,6 @@
 				<img id="<%= number %>" src="<%= img %>" class="tile"/>
 			</a>
 			<br/>
-		</script>
-		
-		<script id="build-tile-empty" type="text/template">
-			<p>empty tile *coords*, what do you want to build</p>
-
 		</script>
 		
 		<script id="build-tile-info" type="text/template">
@@ -143,6 +155,7 @@
 		<script src="js/views/tileView.js"></script>
 		<script src="js/views/allTileView.js"></script>
 		<script src="js/views/selectedTile.js"></script>
+		<script src="js/views/startupView.js"></script>
 		
 		<script src="js/models/tileName.js"></script>
 		

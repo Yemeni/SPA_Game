@@ -28,13 +28,37 @@ app.SelectedTile = Backbone.View.extend({
 		if(main.get('wood') >= self.tile[tilenum].get('cost_wood')
 			&& main.get('stone') >= self.tile[tilenum].get('cost_stone')
 			&& main.get('planks') >= self.tile[tilenum].get('cost_planks')
+			
+			&& self.tile[tilenum].get('level') <= 10
 		){
+			main.set('wood' , main.get('wood') - self.tile[tilenum].get('cost_wood'));
+			main.set('stone' , main.get('stone') - self.tile[tilenum].get('cost_stone'));
+			main.set('planks' , main.get('planks') - self.tile[tilenum].get('cost_planks'));
+			
 			self.tile[tilenum].set('level', self.tile[tilenum].get('level') + 1 );
-			self.tile[tilenum].set('cost_wood', Math.round(self.tile[tilenum].get('level')*2.50 + 10) );
-			self.tile[tilenum].set('cost_stone', Math.round(self.tile[tilenum].get('level')*2.20 + 8) );
-			self.tile[tilenum].set('cost_planks', Math.round(self.tile[tilenum].get('level')*1.50 + 10) );
+			
+			self.tile[tilenum].set('cost_wood', Math.round(self.tile[tilenum].get('cost_wood')*2.50 + 10) );
+			self.tile[tilenum].set('cost_stone', Math.round(self.tile[tilenum].get('cost_stone')*2.20 + 8) );
+			self.tile[tilenum].set('cost_planks', Math.round(self.tile[tilenum].get('cost_planks')*1.50 + 10) );
+			
+			self.tile[tilenum].set('require_wood', Math.round(self.tile[tilenum].get('require_wood')*1.9));
+
+			
+			self.tile[tilenum].set('produce_wood', Math.round(self.tile[tilenum].get('produce_wood')*1.9));
+			self.tile[tilenum].set('produce_stone', Math.round(self.tile[tilenum].get('produce_stone')*1.9));
+			self.tile[tilenum].set('produce_planks', Math.round(self.tile[tilenum].get('produce_planks')*1.9));
+			
+			main.set('max_storage', main.get('max_storage') - tile[tilenum].get('max_storage') );
+			self.tile[tilenum].set('max_storage', Math.round(self.tile[tilenum].get('max_storage')*2.9));
+			main.set('max_storage', main.get('max_storage') + tile[tilenum].get('max_storage') );
+			
+			main.set('max_settlers', main.get('max_settlers') - tile[tilenum].get('max_settlers') );
+			self.tile[tilenum].set('max_settlers', Math.round(self.tile[tilenum].get('max_settlers')*2.2));
+			main.set('max_settlers', main.get('max_settlers') + tile[tilenum].get('max_settlers') );
+			
 			console.log("upgraded " + selectedTile.model.get('number'));
 		}
+		this.updateAllTiles();
 	},
 	
 	destroyTile : function(){
