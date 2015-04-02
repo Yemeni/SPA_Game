@@ -24,8 +24,17 @@ app.SelectedTile = Backbone.View.extend({
 	},
 	
 	upgradeTile : function(){
-		console.log("upgraded " + selectedTile.model.get('number'));
-		
+		var tilenum = this.model.get('number');
+		if(main.get('wood') >= self.tile[tilenum].get('cost_wood')
+			&& main.get('stone') >= self.tile[tilenum].get('cost_stone')
+			&& main.get('planks') >= self.tile[tilenum].get('cost_planks')
+		){
+			self.tile[tilenum].set('level', self.tile[tilenum].get('level') + 1 );
+			self.tile[tilenum].set('cost_wood', Math.round(self.tile[tilenum].get('level')*2.50 + 10) );
+			self.tile[tilenum].set('cost_stone', Math.round(self.tile[tilenum].get('level')*2.20 + 8) );
+			self.tile[tilenum].set('cost_planks', Math.round(self.tile[tilenum].get('level')*1.50 + 10) );
+			console.log("upgraded " + selectedTile.model.get('number'));
+		}
 	},
 	
 	destroyTile : function(){

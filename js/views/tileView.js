@@ -37,9 +37,5 @@ app.TileView = Backbone.View.extend({
 		//var TileInfoTemplate = this.infoTemplate(this.model.toJSON());
 		//$("#draw-tile-info").html(TileInfoTemplate);
 		//return this;
-	},
-	
-	upgradeTile : function(){
-		console.log("upgraded");
 	}
 });
