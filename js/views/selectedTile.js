@@ -18,6 +18,7 @@ app.SelectedTile = Backbone.View.extend({
 		'click #destroy': 'destroyTile',
 		'click #upgrade-to-mason' : 'upgradeToMason',
 		'click #upgrade-to-wood-cutter' : 'upgradeToWoodCutter',
+		'click #upgrade-to-wood-swamill' : 'upgradeToSwamill',
 		'click #upgrade-to-residence' : 'upgradeToResidence',
 		'click #upgrade-to-storage' : 'upgradeToStorage'
 	},
@@ -51,6 +52,14 @@ app.SelectedTile = Backbone.View.extend({
 		var tilenum = this.model.get('number');
 		self.tile[tilenum].set(wood_cutter.attributes);
 		console.log("upgraded " + selectedTile.model.get('number') + " to wood_cutter ");
+		this.updateAllTiles();
+
+	},
+	
+	upgradeToSwamill : function(){
+		var tilenum = this.model.get('number');
+		self.tile[tilenum].set(wood_swamill.attributes);
+		console.log("upgraded " + selectedTile.model.get('number') + " to wood_swamill ");
 		this.updateAllTiles();
 
 	},

@@ -33,9 +33,20 @@ var wood_cutter = new app.Building({
 	tier : 1
 });
 
+var wood_swamill = new app.Building({
+	name : "Wood Swamill",
+	require_wood : 2,
+	produce_planks: 1,
+	img : "images/Pinewood_Sawmill_Level_1.png",
+	level : 1,
+	tier : 2
+});
+
+
+
 var residence = new app.Building({
 	name : "Residence",
-	img : "images/Pinewood_Cutter_Level_1.png",
+	img : "images/Residence_Level_1.png",
 	level : 1,
 	tier : 1,
 	max_settlers: 10
@@ -44,7 +55,7 @@ var residence = new app.Building({
 
 var storage = new app.Building({
 	name : "Storage",
-	img : "images/Pinewood_Cutter_Level_1.png",
+	img : "images/Storehouse_Level_1.png",
 	level : 1,
 	tier : 1,
 	max_storage: 100,

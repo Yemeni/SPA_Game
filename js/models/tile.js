@@ -21,6 +21,7 @@ app.Tile = Backbone.Model.extend({
 		
 		produce_wood : 0,
 		produce_stone : 0,
+		produce_planks : 0,
 		
 		max_storage: 0,
 		max_settlers: 0
