@@ -27,6 +27,14 @@ app.ControllerView = Backbone.View.extend({
 			}
 		});
 		
+		$.each(tile, function( index, value ){
+			if(tile[index].get('tier') == 2){
+				if(main.get('wood') >= tile[index].get('require_wood')){
+					main.set('planks', main.get('planks') + tile[index].get('produce_planks') );
+				}
+			}
+		});
+		
 		mainView.render();
 		//main.set('stone' ,main.get('day')  )
 	}
