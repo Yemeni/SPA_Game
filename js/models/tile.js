@@ -15,6 +15,7 @@ app.Tile = Backbone.Model.extend({
 		cost_workers : 0,
 		cost_wood : 0,
 		cost_stone : 0,
+		cost_planks : 0,
 		
 		require_wood : 0,
 		require_stone : 0,

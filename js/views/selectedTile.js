@@ -40,9 +40,9 @@ app.SelectedTile = Backbone.View.extend({
 	
 	upgradeToMason : function(){
 		var tilenum = this.model.get('number');
-		//inherit(tile[tilenum].attributes, mason.attributes);
-		//tile[tilenum].attributes = mason.attributes;
 		self.tile[tilenum].set(mason.attributes);
+		self.tile[tilenum].set('cost_wood', Math.round(self.tile[tilenum].get('level')*2.50 + 10) );
+		self.tile[tilenum].set('cost_stone', Math.round(self.tile[tilenum].get('level')*1.20 + 8) );
 		console.log("upgraded " + selectedTile.model.get('number') + " to mason ");
 		this.updateAllTiles();
 		
@@ -51,6 +51,8 @@ app.SelectedTile = Backbone.View.extend({
 	upgradeToWoodCutter : function(){
 		var tilenum = this.model.get('number');
 		self.tile[tilenum].set(wood_cutter.attributes);
+		self.tile[tilenum].set('cost_wood', Math.round(self.tile[tilenum].get('level')*1.50 + 10) );
+		self.tile[tilenum].set('cost_stone', Math.round(self.tile[tilenum].get('level')*2.20 + 8) );
 		console.log("upgraded " + selectedTile.model.get('number') + " to wood_cutter ");
 		this.updateAllTiles();
 
@@ -59,6 +61,8 @@ app.SelectedTile = Backbone.View.extend({
 	upgradeToSwamill : function(){
 		var tilenum = this.model.get('number');
 		self.tile[tilenum].set(wood_swamill.attributes);
+		self.tile[tilenum].set('cost_planks', Math.round(self.tile[tilenum].get('level')*1.50 + 10) );
+		self.tile[tilenum].set('cost_stone', Math.round(self.tile[tilenum].get('level')*3.20 + 8) );
 		console.log("upgraded " + selectedTile.model.get('number') + " to wood_swamill ");
 		this.updateAllTiles();
 

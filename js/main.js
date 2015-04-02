@@ -22,7 +22,10 @@ var mason = new app.Building({
 	produce_stone : 1,
 	img : "images/Mason_Level_1.png",
 	level : 1,
-	tier : 1
+	tier : 1,
+	cost_workers : 1,
+	cost_wood : 0,
+	cost_stone : 0
 });
 
 var wood_cutter = new app.Building({
@@ -30,7 +33,10 @@ var wood_cutter = new app.Building({
 	produce_wood : 1,
 	img : "images/Pinewood_Cutter_Level_1.png",
 	level : 1,
-	tier : 1
+	tier : 1,
+	cost_workers : 1,
+	cost_wood : 0,
+	cost_stone : 0
 });
 
 var wood_swamill = new app.Building({
@@ -39,7 +45,10 @@ var wood_swamill = new app.Building({
 	produce_planks: 1,
 	img : "images/Pinewood_Sawmill_Level_1.png",
 	level : 1,
-	tier : 2
+	tier : 2,
+	cost_workers : 2,
+	cost_planks : 20,
+	cost_stone : 5
 });
 
 

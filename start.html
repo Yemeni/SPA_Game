@@ -107,6 +107,18 @@
 			<% if(cost_workers > 0){ %>
 				<p>Required Workers : <%= cost_workers %></p>
 			<% } %>
+			
+			<% if(cost_wood > 0){ %>
+				<p>Wood to upgrade : <%= cost_wood %></p>
+			<% } %>
+			
+			<% if(cost_stone > 0){ %>
+				<p>Stone to upgrade : <%= cost_stone %></p>
+			<% } %>
+			
+			<% if(cost_planks > 0){ %>
+				<p>Planks to upgrade : <%= cost_planks %></p>
+			<% } %>
 
 			<% if(name != "Empty tile") { %>
 			<a id="upgrade" class="btn btn-default">Upgrade »</a>
