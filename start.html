@@ -66,6 +66,10 @@
 				<a id="upgrade-to-mason" class="btn btn-default">Mason »</a>
 			<% } %>
 			
+			<% if(level > 0){ %>
+				<p>Level : <%= level %></p>
+			<% } %>
+			
 			<% if(require_wood > 0){ %>
 				<p>Consumes Wood : <%= require_wood %></p>
 			<% } %>
@@ -80,6 +84,14 @@
 			
 			<% if(produce_stone > 0){ %>
 				<p>Produce Stone : <%= produce_stone %></p>
+			<% } %>
+			
+			<% if(max_storage > 0){ %>
+				<p>Provide Storage : <%= max_storage %></p>
+			<% } %>
+			
+			<% if(max_settlers > 0){ %>
+				<p>Provide Housing : <%= max_settlers %></p>
 			<% } %>
 			
 			<% if(cost_workers > 0){ %>
