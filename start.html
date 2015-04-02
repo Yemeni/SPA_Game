@@ -108,21 +108,23 @@
 				<p>Required Workers : <%= cost_workers %></p>
 			<% } %>
 			
-			<% if(cost_wood > 0){ %>
+			<% if(cost_wood > 0 && level <10){ %>
 				<p>Wood to upgrade : <%= cost_wood %></p>
 			<% } %>
 			
-			<% if(cost_stone > 0){ %>
+			<% if(cost_stone > 0 && level <10){ %>
 				<p>Stone to upgrade : <%= cost_stone %></p>
 			<% } %>
 			
-			<% if(cost_planks > 0){ %>
+			<% if(cost_planks > 0 && level <10){ %>
 				<p>Planks to upgrade : <%= cost_planks %></p>
 			<% } %>
 
 			<% if(name != "Empty tile") { %>
-			<a id="upgrade" class="btn btn-default">Upgrade »</a>
-			<a id="destroy" class="btn btn-danger">Destroy »</a>
+				<% if(level < 10){ %>
+					<a id="upgrade" class="btn btn-default">Upgrade »</a>
+				<% } %>
+				<a id="destroy" class="btn btn-danger">Destroy »</a>
 			<% } %>
 		</script>
 		

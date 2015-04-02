@@ -24,7 +24,7 @@ var mason = new app.Building({
 	level : 1,
 	tier : 1,
 	cost_workers : 1,
-	cost_wood : 0,
+	cost_wood : 1,
 	cost_stone : 0
 });
 
@@ -36,7 +36,7 @@ var wood_cutter = new app.Building({
 	tier : 1,
 	cost_workers : 1,
 	cost_wood : 0,
-	cost_stone : 0
+	cost_stone : 2
 });
 
 var wood_swamill = new app.Building({
@@ -58,7 +58,11 @@ var residence = new app.Building({
 	img : "images/Residence_Level_1.png",
 	level : 1,
 	tier : 1,
-	max_settlers: 10
+	max_settlers: 10,
+	
+	cost_wood : 1,
+	cost_stone : 2,
+	cost_planks: 3
 	
 });
 
@@ -68,6 +72,10 @@ var storage = new app.Building({
 	level : 1,
 	tier : 1,
 	max_storage: 100,
+	
+	cost_wood : 4,
+	cost_stone : 2,
+	cost_planks: 6
 });
 
 //
