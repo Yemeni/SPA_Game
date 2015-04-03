@@ -1,0 +1,30 @@
+{
+  "name": "SPA_Game",
+  "version": "1.0.0",
+  "description": "A Backbone SPA Simulation Game",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-run": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yemeni/SPA_Game.git"
+  },
+  "keywords": [
+    "backbone",
+    "game",
+    "spa",
+    "javascript"
+  ],
+  "author": "Yousef Adel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yemeni/SPA_Game/issues"
+  },
+  "homepage": "https://github.com/Yemeni/SPA_Game"
+}

@@ -1,0 +1,521 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'uncss' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 silly cache add args [ 'uncss', null ]
+6 verbose cache add spec uncss
+7 silly cache add parsed spec { raw: 'uncss',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'uncss',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed uncss@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'uncss', range: '*', hasData: false }
+12 silly mapToRegistry name uncss
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry http://localhost:12644/
+15 silly mapToRegistry uri http://localhost:12644/uncss
+16 verbose addNameRange registry:http://localhost:12644/uncss not in flight; fetching
+17 verbose request uri http://localhost:12644/uncss
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 11:35:04 PM
+20 verbose request id 9f20da9f15900de4
+21 http request GET http://localhost:12644/uncss
+22 http 200 http://localhost:12644/uncss
+23 silly get cb [ 200,
+23 silly get   { 'content-type': 'application/json',
+23 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'transfer-encoding': 'chunked' } ]
+24 verbose get saving uncss to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\uncss\.cache.json
+25 silly addNameRange number 2 { name: 'uncss', range: '*', hasData: true }
+26 silly addNameRange versions [ 'uncss', [ '0.12.0', '0.8.1' ] ]
+27 verbose addNamed uncss@0.12.0
+28 silly addNamed semver.valid 0.12.0
+29 silly addNamed semver.validRange 0.12.0
+30 silly cache afterAdd uncss@0.12.0
+31 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\uncss\0.12.0\package\package.json not in flight; writing
+32 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\uncss\0.12.0\package\package.json written
+33 silly install resolved [ { name: 'uncss',
+33 silly install resolved     version: '0.12.0',
+33 silly install resolved     author: { name: 'Giakki' },
+33 silly install resolved     description: 'Remove unused CSS styles',
+33 silly install resolved     license: 'MIT',
+33 silly install resolved     homepage: 'https://github.com/giakki/uncss',
+33 silly install resolved     directories: { test: 'tests' },
+33 silly install resolved     scripts: { test: 'grunt test' },
+33 silly install resolved     main: 'src/uncss.js',
+33 silly install resolved     bin: { uncss: 'bin/uncss' },
+33 silly install resolved     repository: { type: 'git', url: 'https://github.com/giakki/uncss.git' },
+33 silly install resolved     bugs: { url: 'https://github.com/giakki/uncss/issues' },
+33 silly install resolved     keywords: [ 'optimize', 'optimise', 'unused', 'selector', 'CSS', 'HTML' ],
+33 silly install resolved     files: [ 'bin', 'src', 'LICENSE.md' ],
+33 silly install resolved     dependencies:
+33 silly install resolved      { bluebird: '~2.8.2',
+33 silly install resolved        commander: '~2.6.0',
+33 silly install resolved        css: '1.6.0',
+33 silly install resolved        glob: '~4.3.5',
+33 silly install resolved        'is-absolute-url': '~1.0.0',
+33 silly install resolved        'is-html': '~1.0.0',
+33 silly install resolved        lodash: '~2.4.1',
+33 silly install resolved        phridge: '~1.0.7',
+33 silly install resolved        request: '~2.51.0' },
+33 silly install resolved     devDependencies:
+33 silly install resolved      { chai: '~1.10.0',
+33 silly install resolved        'chai-resemble': '~0.4.1',
+33 silly install resolved        grunt: '~0.4.5',
+33 silly install resolved        'grunt-contrib-jshint': '~0.11.0',
+33 silly install resolved        'grunt-eslint': '~4.0.0',
+33 silly install resolved        'grunt-mocha-cov': '~0.3.0',
+33 silly install resolved        'load-grunt-tasks': '~3.0.0',
+33 silly install resolved        'time-grunt': '~1.0.0' },
+33 silly install resolved     engines: { node: '>= 0.10.0' },
+33 silly install resolved     config: { blanket: [Object] },
+33 silly install resolved     gitHead: 'd99540f8165bf498397fd8ace03d3efb5f525e26',
+33 silly install resolved     _id: 'uncss@0.12.0',
+33 silly install resolved     _shasum: 'ff1375eb226f1d6e2bc6faf5a9ae455036513195',
+33 silly install resolved     _from: 'uncss@*',
+33 silly install resolved     _npmVersion: '2.2.0',
+33 silly install resolved     _nodeVersion: '0.10.35',
+33 silly install resolved     _npmUser: { name: 'giakki', email: 'giakki.dev@gmail.com' },
+33 silly install resolved     maintainers: [ [Object] ],
+33 silly install resolved     dist:
+33 silly install resolved      { shasum: 'ff1375eb226f1d6e2bc6faf5a9ae455036513195',
+33 silly install resolved        tarball: 'http://registry.npmjs.org/uncss/-/uncss-0.12.0.tgz' },
+33 silly install resolved     _resolved: 'https://registry.npmjs.org/uncss/-/uncss-0.12.0.tgz',
+33 silly install resolved     readme: 'ERROR: No README data found!' } ]
+34 info install uncss@0.12.0 into C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game
+35 info installOne uncss@0.12.0
+36 verbose installOne of uncss to C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game not in flight; installing
+37 verbose lock using C:\Users\Hello Yemen\AppData\Roaming\npm-cache\_locks\uncss-bb046736cc98fc0a.lock for C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\uncss
+38 silly install write writing uncss 0.12.0 to C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\uncss
+39 silly cache addNamed cb uncss@0.12.0
+40 verbose unbuild node_modules\uncss
+41 verbose gentlyRm vacuuming C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\uncss
+42 verbose tar unpack C:\Users\Hello Yemen\AppData\Roaming\npm-cache\uncss\0.12.0\package.tgz
+43 verbose tar unpacking to C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\uncss
+44 verbose gentlyRm vacuuming C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\uncss
+45 silly gunzTarPerm modes [ '777', '666' ]
+46 silly gunzTarPerm extractEntry package.json
+47 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+48 silly gunzTarPerm extractEntry README.md
+49 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+50 silly gunzTarPerm extractEntry LICENSE.md
+51 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+52 silly gunzTarPerm extractEntry bin/uncss
+53 silly gunzTarPerm modified mode [ 'bin/uncss', 493, 511 ]
+54 silly gunzTarPerm extractEntry src/lib.js
+55 silly gunzTarPerm modified mode [ 'src/lib.js', 420, 438 ]
+56 silly gunzTarPerm extractEntry src/phantom.js
+57 silly gunzTarPerm modified mode [ 'src/phantom.js', 420, 438 ]
+58 silly gunzTarPerm extractEntry src/uncss.js
+59 silly gunzTarPerm modified mode [ 'src/uncss.js', 420, 438 ]
+60 silly gunzTarPerm extractEntry src/utility.js
+61 silly gunzTarPerm modified mode [ 'src/utility.js', 420, 438 ]
+62 info preinstall uncss@0.12.0
+63 silly prepareForInstallMany adding bluebird@~2.8.2 from uncss dependencies
+64 silly prepareForInstallMany adding commander@~2.6.0 from uncss dependencies
+65 silly prepareForInstallMany adding css@1.6.0 from uncss dependencies
+66 silly prepareForInstallMany adding glob@~4.3.5 from uncss dependencies
+67 silly prepareForInstallMany adding is-absolute-url@~1.0.0 from uncss dependencies
+68 silly prepareForInstallMany adding is-html@~1.0.0 from uncss dependencies
+69 silly prepareForInstallMany adding lodash@~2.4.1 from uncss dependencies
+70 silly prepareForInstallMany adding phridge@~1.0.7 from uncss dependencies
+71 silly prepareForInstallMany adding request@~2.51.0 from uncss dependencies
+72 silly cache add args [ 'css@1.6.0', null ]
+73 verbose cache add spec css@1.6.0
+74 silly cache add parsed spec { raw: 'css@1.6.0',
+74 silly cache add   scope: null,
+74 silly cache add   name: 'css',
+74 silly cache add   rawSpec: '1.6.0',
+74 silly cache add   spec: '1.6.0',
+74 silly cache add   type: 'version' }
+75 verbose addNamed css@1.6.0
+76 silly addNamed semver.valid 1.6.0
+77 silly addNamed semver.validRange 1.6.0
+78 silly mapToRegistry name css
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry http://localhost:12644/
+81 silly mapToRegistry uri http://localhost:12644/css
+82 verbose addNameVersion registry:http://localhost:12644/css not in flight; fetching
+83 silly cache add args [ 'glob@~4.3.5', null ]
+84 verbose cache add spec glob@~4.3.5
+85 silly cache add parsed spec { raw: 'glob@~4.3.5',
+85 silly cache add   scope: null,
+85 silly cache add   name: 'glob',
+85 silly cache add   rawSpec: '~4.3.5',
+85 silly cache add   spec: '>=4.3.5 <4.4.0',
+85 silly cache add   type: 'range' }
+86 verbose addNamed glob@>=4.3.5 <4.4.0
+87 silly addNamed semver.valid null
+88 silly addNamed semver.validRange >=4.3.5 <4.4.0
+89 silly addNameRange { name: 'glob', range: '>=4.3.5 <4.4.0', hasData: false }
+90 silly mapToRegistry name glob
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry http://localhost:12644/
+93 silly mapToRegistry uri http://localhost:12644/glob
+94 verbose addNameRange registry:http://localhost:12644/glob not in flight; fetching
+95 silly cache add args [ 'is-absolute-url@~1.0.0', null ]
+96 verbose cache add spec is-absolute-url@~1.0.0
+97 silly cache add parsed spec { raw: 'is-absolute-url@~1.0.0',
+97 silly cache add   scope: null,
+97 silly cache add   name: 'is-absolute-url',
+97 silly cache add   rawSpec: '~1.0.0',
+97 silly cache add   spec: '>=1.0.0 <1.1.0',
+97 silly cache add   type: 'range' }
+98 verbose addNamed is-absolute-url@>=1.0.0 <1.1.0
+99 silly addNamed semver.valid null
+100 silly addNamed semver.validRange >=1.0.0 <1.1.0
+101 silly addNameRange { name: 'is-absolute-url',
+101 silly addNameRange   range: '>=1.0.0 <1.1.0',
+101 silly addNameRange   hasData: false }
+102 silly mapToRegistry name is-absolute-url
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry http://localhost:12644/
+105 silly mapToRegistry uri http://localhost:12644/is-absolute-url
+106 verbose addNameRange registry:http://localhost:12644/is-absolute-url not in flight; fetching
+107 silly cache add args [ 'is-html@~1.0.0', null ]
+108 verbose cache add spec is-html@~1.0.0
+109 silly cache add parsed spec { raw: 'is-html@~1.0.0',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'is-html',
+109 silly cache add   rawSpec: '~1.0.0',
+109 silly cache add   spec: '>=1.0.0 <1.1.0',
+109 silly cache add   type: 'range' }
+110 verbose addNamed is-html@>=1.0.0 <1.1.0
+111 silly addNamed semver.valid null
+112 silly addNamed semver.validRange >=1.0.0 <1.1.0
+113 silly addNameRange { name: 'is-html', range: '>=1.0.0 <1.1.0', hasData: false }
+114 silly mapToRegistry name is-html
+115 silly mapToRegistry using default registry
+116 silly mapToRegistry registry http://localhost:12644/
+117 silly mapToRegistry uri http://localhost:12644/is-html
+118 verbose addNameRange registry:http://localhost:12644/is-html not in flight; fetching
+119 silly cache add args [ 'lodash@~2.4.1', null ]
+120 verbose cache add spec lodash@~2.4.1
+121 silly cache add parsed spec { raw: 'lodash@~2.4.1',
+121 silly cache add   scope: null,
+121 silly cache add   name: 'lodash',
+121 silly cache add   rawSpec: '~2.4.1',
+121 silly cache add   spec: '>=2.4.1 <2.5.0',
+121 silly cache add   type: 'range' }
+122 verbose addNamed lodash@>=2.4.1 <2.5.0
+123 silly addNamed semver.valid null
+124 silly addNamed semver.validRange >=2.4.1 <2.5.0
+125 silly addNameRange { name: 'lodash', range: '>=2.4.1 <2.5.0', hasData: false }
+126 silly mapToRegistry name lodash
+127 silly mapToRegistry using default registry
+128 silly mapToRegistry registry http://localhost:12644/
+129 silly mapToRegistry uri http://localhost:12644/lodash
+130 verbose addNameRange registry:http://localhost:12644/lodash not in flight; fetching
+131 silly cache add args [ 'phridge@~1.0.7', null ]
+132 verbose cache add spec phridge@~1.0.7
+133 silly cache add parsed spec { raw: 'phridge@~1.0.7',
+133 silly cache add   scope: null,
+133 silly cache add   name: 'phridge',
+133 silly cache add   rawSpec: '~1.0.7',
+133 silly cache add   spec: '>=1.0.7 <1.1.0',
+133 silly cache add   type: 'range' }
+134 verbose addNamed phridge@>=1.0.7 <1.1.0
+135 silly addNamed semver.valid null
+136 silly addNamed semver.validRange >=1.0.7 <1.1.0
+137 silly addNameRange { name: 'phridge', range: '>=1.0.7 <1.1.0', hasData: false }
+138 silly mapToRegistry name phridge
+139 silly mapToRegistry using default registry
+140 silly mapToRegistry registry http://localhost:12644/
+141 silly mapToRegistry uri http://localhost:12644/phridge
+142 verbose addNameRange registry:http://localhost:12644/phridge not in flight; fetching
+143 silly cache add args [ 'request@~2.51.0', null ]
+144 verbose cache add spec request@~2.51.0
+145 silly cache add parsed spec { raw: 'request@~2.51.0',
+145 silly cache add   scope: null,
+145 silly cache add   name: 'request',
+145 silly cache add   rawSpec: '~2.51.0',
+145 silly cache add   spec: '>=2.51.0 <2.52.0',
+145 silly cache add   type: 'range' }
+146 verbose addNamed request@>=2.51.0 <2.52.0
+147 silly addNamed semver.valid null
+148 silly addNamed semver.validRange >=2.51.0 <2.52.0
+149 silly addNameRange { name: 'request', range: '>=2.51.0 <2.52.0', hasData: false }
+150 silly mapToRegistry name request
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry http://localhost:12644/
+153 silly mapToRegistry uri http://localhost:12644/request
+154 verbose addNameRange registry:http://localhost:12644/request not in flight; fetching
+155 silly cache add args [ 'bluebird@~2.8.2', null ]
+156 verbose cache add spec bluebird@~2.8.2
+157 silly cache add parsed spec { raw: 'bluebird@~2.8.2',
+157 silly cache add   scope: null,
+157 silly cache add   name: 'bluebird',
+157 silly cache add   rawSpec: '~2.8.2',
+157 silly cache add   spec: '>=2.8.2 <2.9.0',
+157 silly cache add   type: 'range' }
+158 verbose addNamed bluebird@>=2.8.2 <2.9.0
+159 silly addNamed semver.valid null
+160 silly addNamed semver.validRange >=2.8.2 <2.9.0
+161 silly addNameRange { name: 'bluebird', range: '>=2.8.2 <2.9.0', hasData: false }
+162 silly mapToRegistry name bluebird
+163 silly mapToRegistry using default registry
+164 silly mapToRegistry registry http://localhost:12644/
+165 silly mapToRegistry uri http://localhost:12644/bluebird
+166 verbose addNameRange registry:http://localhost:12644/bluebird not in flight; fetching
+167 silly cache add args [ 'commander@~2.6.0', null ]
+168 verbose cache add spec commander@~2.6.0
+169 silly cache add parsed spec { raw: 'commander@~2.6.0',
+169 silly cache add   scope: null,
+169 silly cache add   name: 'commander',
+169 silly cache add   rawSpec: '~2.6.0',
+169 silly cache add   spec: '>=2.6.0 <2.7.0',
+169 silly cache add   type: 'range' }
+170 verbose addNamed commander@>=2.6.0 <2.7.0
+171 silly addNamed semver.valid null
+172 silly addNamed semver.validRange >=2.6.0 <2.7.0
+173 silly addNameRange { name: 'commander', range: '>=2.6.0 <2.7.0', hasData: false }
+174 silly mapToRegistry name commander
+175 silly mapToRegistry using default registry
+176 silly mapToRegistry registry http://localhost:12644/
+177 silly mapToRegistry uri http://localhost:12644/commander
+178 verbose addNameRange registry:http://localhost:12644/commander not in flight; fetching
+179 verbose request uri http://localhost:12644/is-absolute-url
+180 verbose request no auth needed
+181 info attempt registry request try #1 at 11:35:04 PM
+182 http request GET http://localhost:12644/is-absolute-url
+183 verbose request uri http://localhost:12644/css
+184 verbose request no auth needed
+185 info attempt registry request try #1 at 11:35:04 PM
+186 http request GET http://localhost:12644/css
+187 verbose request uri http://localhost:12644/is-html
+188 verbose request no auth needed
+189 info attempt registry request try #1 at 11:35:04 PM
+190 http request GET http://localhost:12644/is-html
+191 verbose request uri http://localhost:12644/glob
+192 verbose request no auth needed
+193 info attempt registry request try #1 at 11:35:04 PM
+194 http request GET http://localhost:12644/glob
+195 verbose request uri http://localhost:12644/lodash
+196 verbose request no auth needed
+197 info attempt registry request try #1 at 11:35:04 PM
+198 http request GET http://localhost:12644/lodash
+199 verbose request uri http://localhost:12644/phridge
+200 verbose request no auth needed
+201 info attempt registry request try #1 at 11:35:04 PM
+202 http request GET http://localhost:12644/phridge
+203 verbose request uri http://localhost:12644/request
+204 verbose request no auth needed
+205 info attempt registry request try #1 at 11:35:04 PM
+206 http request GET http://localhost:12644/request
+207 verbose request uri http://localhost:12644/commander
+208 verbose request no auth needed
+209 info attempt registry request try #1 at 11:35:04 PM
+210 http request GET http://localhost:12644/commander
+211 verbose request uri http://localhost:12644/bluebird
+212 verbose request no auth needed
+213 info attempt registry request try #1 at 11:35:04 PM
+214 http request GET http://localhost:12644/bluebird
+215 http 200 http://localhost:12644/is-absolute-url
+216 silly get cb [ 200,
+216 silly get   { 'content-type': 'application/json',
+216 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+216 silly get     connection: 'keep-alive',
+216 silly get     'transfer-encoding': 'chunked' } ]
+217 verbose get saving is-absolute-url to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\is-absolute-url\.cache.json
+218 http 200 http://localhost:12644/css
+219 silly get cb [ 200,
+219 silly get   { 'content-type': 'application/json',
+219 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+219 silly get     connection: 'keep-alive',
+219 silly get     'transfer-encoding': 'chunked' } ]
+220 verbose get saving css to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\css\.cache.json
+221 http 200 http://localhost:12644/is-html
+222 silly get cb [ 200,
+222 silly get   { 'content-type': 'application/json',
+222 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+222 silly get     connection: 'keep-alive',
+222 silly get     'transfer-encoding': 'chunked' } ]
+223 verbose get saving is-html to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\is-html\.cache.json
+224 http 200 http://localhost:12644/glob
+225 silly get cb [ 200,
+225 silly get   { 'content-type': 'application/json',
+225 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+225 silly get     connection: 'keep-alive',
+225 silly get     'transfer-encoding': 'chunked' } ]
+226 verbose get saving glob to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\glob\.cache.json
+227 http 200 http://localhost:12644/lodash
+228 silly get cb [ 200,
+228 silly get   { 'content-type': 'application/json',
+228 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+228 silly get     connection: 'keep-alive',
+228 silly get     'transfer-encoding': 'chunked' } ]
+229 verbose get saving lodash to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\lodash\.cache.json
+230 http 200 http://localhost:12644/phridge
+231 silly get cb [ 200,
+231 silly get   { 'content-type': 'application/json',
+231 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+231 silly get     connection: 'keep-alive',
+231 silly get     'transfer-encoding': 'chunked' } ]
+232 verbose get saving phridge to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\phridge\.cache.json
+233 http 200 http://localhost:12644/request
+234 silly get cb [ 200,
+234 silly get   { 'content-type': 'application/json',
+234 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+234 silly get     connection: 'keep-alive',
+234 silly get     'transfer-encoding': 'chunked' } ]
+235 verbose get saving request to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\request\.cache.json
+236 http 200 http://localhost:12644/commander
+237 silly get cb [ 200,
+237 silly get   { 'content-type': 'application/json',
+237 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+237 silly get     connection: 'keep-alive',
+237 silly get     'transfer-encoding': 'chunked' } ]
+238 verbose get saving commander to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\commander\.cache.json
+239 http 200 http://localhost:12644/bluebird
+240 silly get cb [ 200,
+240 silly get   { 'content-type': 'application/json',
+240 silly get     date: 'Fri, 03 Apr 2015 20:35:04 GMT',
+240 silly get     connection: 'keep-alive',
+240 silly get     'transfer-encoding': 'chunked' } ]
+241 verbose get saving bluebird to C:\Users\Hello Yemen\AppData\Roaming\npm-cache\localhost_12644\bluebird\.cache.json
+242 silly addNameRange number 2 { name: 'is-absolute-url',
+242 silly addNameRange   range: '>=1.0.0 <1.1.0',
+242 silly addNameRange   hasData: true }
+243 silly addNameRange versions [ 'is-absolute-url', [ '1.0.0' ] ]
+244 verbose addNamed is-absolute-url@1.0.0
+245 silly addNamed semver.valid 1.0.0
+246 silly addNamed semver.validRange 1.0.0
+247 silly mapToRegistry name css
+248 silly mapToRegistry using default registry
+249 silly mapToRegistry registry http://localhost:12644/
+250 silly mapToRegistry uri http://localhost:12644/css
+251 verbose addRemoteTarball http://registry.npmjs.org/css/-/css-1.6.0.tgz not in flight; adding
+252 verbose addRemoteTarball [ 'http://registry.npmjs.org/css/-/css-1.6.0.tgz',
+252 verbose addRemoteTarball   'c06fff0afbb313fce5bce070d76531a6c8d300aa' ]
+253 silly addNameRange number 2 { name: 'is-html', range: '>=1.0.0 <1.1.0', hasData: true }
+254 silly addNameRange versions [ 'is-html', [ '1.0.0' ] ]
+255 verbose addNamed is-html@1.0.0
+256 silly addNamed semver.valid 1.0.0
+257 silly addNamed semver.validRange 1.0.0
+258 silly addNameRange number 2 { name: 'glob', range: '>=4.3.5 <4.4.0', hasData: true }
+259 silly addNameRange versions [ 'glob',
+259 silly addNameRange   [ '5.0.0', '4.0.6', '4.3.5', '4.4.0', '4.5.0', '3.1.21', '3.2.11' ] ]
+260 verbose addNamed glob@4.3.5
+261 silly addNamed semver.valid 4.3.5
+262 silly addNamed semver.validRange 4.3.5
+263 silly addNameRange number 2 { name: 'phridge', range: '>=1.0.7 <1.1.0', hasData: true }
+264 silly addNameRange versions [ 'phridge', [ '1.0.7' ] ]
+265 verbose addNamed phridge@1.0.7
+266 silly addNamed semver.valid 1.0.7
+267 silly addNamed semver.validRange 1.0.7
+268 silly addNameRange number 2 { name: 'request', range: '>=2.51.0 <2.52.0', hasData: true }
+269 silly addNameRange versions [ 'request',
+269 silly addNameRange   [ '2.53.0', '2.34.0', '2.42.0', '2.51.0', '2.9.203', '2.11.4' ] ]
+270 verbose addNamed request@2.51.0
+271 silly addNamed semver.valid 2.51.0
+272 silly addNamed semver.validRange 2.51.0
+273 silly addNameRange number 2 { name: 'lodash', range: '>=2.4.1 <2.5.0', hasData: true }
+274 silly addNameRange versions [ 'lodash',
+274 silly addNameRange   [ '3.4.0',
+274 silly addNameRange     '1.0.1',
+274 silly addNameRange     '2.2.1',
+274 silly addNameRange     '3.3.0',
+274 silly addNameRange     '3.2.0',
+274 silly addNameRange     '3.3.1',
+274 silly addNameRange     '0.9.2',
+274 silly addNameRange     '2.4.1' ] ]
+275 verbose addNamed lodash@2.4.1
+276 silly addNamed semver.valid 2.4.1
+277 silly addNamed semver.validRange 2.4.1
+278 silly addNameRange number 2 { name: 'commander', range: '>=2.6.0 <2.7.0', hasData: true }
+279 silly addNameRange versions [ 'commander',
+279 silly addNameRange   [ '2.6.0', '2.2.0', '2.4.0', '0.6.1', '2.5.1', '2.1.0' ] ]
+280 verbose addNamed commander@2.6.0
+281 silly addNamed semver.valid 2.6.0
+282 silly addNamed semver.validRange 2.6.0
+283 silly addNameRange number 2 { name: 'bluebird', range: '>=2.8.2 <2.9.0', hasData: true }
+284 silly addNameRange versions [ 'bluebird', [ '2.9.13', '2.9.12' ] ]
+285 silly cache afterAdd is-absolute-url@1.0.0
+286 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\is-absolute-url\1.0.0\package\package.json not in flight; writing
+287 silly cache afterAdd is-html@1.0.0
+288 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\is-html\1.0.0\package\package.json not in flight; writing
+289 silly cache afterAdd glob@4.3.5
+290 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\glob\4.3.5\package\package.json not in flight; writing
+291 silly cache afterAdd phridge@1.0.7
+292 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\phridge\1.0.7\package\package.json not in flight; writing
+293 silly cache afterAdd request@2.51.0
+294 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\request\2.51.0\package\package.json not in flight; writing
+295 silly cache afterAdd lodash@2.4.1
+296 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\lodash\2.4.1\package\package.json not in flight; writing
+297 info retry fetch attempt 1 at 11:35:04 PM
+298 info attempt registry request try #1 at 11:35:04 PM
+299 http fetch GET http://registry.npmjs.org/css/-/css-1.6.0.tgz
+300 silly cache afterAdd commander@2.6.0
+301 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\commander\2.6.0\package\package.json not in flight; writing
+302 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\is-absolute-url\1.0.0\package\package.json written
+303 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\is-html\1.0.0\package\package.json written
+304 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\phridge\1.0.7\package\package.json written
+305 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\request\2.51.0\package\package.json written
+306 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\lodash\2.4.1\package\package.json written
+307 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\commander\2.6.0\package\package.json written
+308 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\glob\4.3.5\package\package.json written
+309 http fetch 200 http://registry.npmjs.org/css/-/css-1.6.0.tgz
+310 silly fetchAndShaCheck shasum c06fff0afbb313fce5bce070d76531a6c8d300aa
+311 verbose addTmpTarball C:\Users\HELLOY~1\AppData\Local\Temp\npm-4056-276c1d51\registry.npmjs.org\css\-\css-1.6.0.tgz not in flight; adding
+312 verbose addTmpTarball already have metadata; skipping unpack for css@1.6.0
+313 silly cache afterAdd css@1.6.0
+314 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\css\1.6.0\package\package.json not in flight; writing
+315 verbose afterAdd C:\Users\Hello Yemen\AppData\Roaming\npm-cache\css\1.6.0\package\package.json written
+316 verbose about to build C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\uncss
+317 verbose unlock done using C:\Users\Hello Yemen\AppData\Roaming\npm-cache\_locks\uncss-bb046736cc98fc0a.lock for C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\uncss
+318 verbose stack Error: No compatible version found: bluebird@'>=2.8.2 <2.9.0'
+318 verbose stack Valid install targets:
+318 verbose stack ["2.9.13","2.9.12"]
+318 verbose stack
+318 verbose stack     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:259:12)
+318 verbose stack     at next (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:238:17)
+318 verbose stack     at setData (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:215:5)
+318 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+318 verbose stack     at f (C:\Program Files\nodejs\node_modules\npm\node_modules\once\once.js:17:25)
+318 verbose stack     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:173:7)
+318 verbose stack     at FSReqWrap.oncomplete (fs.js:99:15)
+319 verbose cwd C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game
+320 error Windows_NT 6.1.7600
+321 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "uncss"
+322 error node v0.12.0
+323 error npm  v2.5.1
+324 error code ETARGET
+325 error notarget No compatible version found: bluebird@'>=2.8.2 <2.9.0'
+325 error notarget Valid install targets:
+325 error notarget ["2.9.13","2.9.12"]
+325 error notarget
+325 error notarget This is most likely not a problem with npm itself.
+325 error notarget In most cases you or one of your dependencies are requesting
+325 error notarget a package version that doesn't exist.
+326 verbose exit [ 1, true ]
+327 verbose unbuild node_modules\uncss
+328 info preuninstall uncss@0.12.0
+329 info uninstall uncss@0.12.0
+330 verbose unbuild rmStuff uncss@0.12.0 from C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules
+331 verbose gentlyRm verifying that C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is managed by npm
+332 silly isManaged C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is not inside C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules
+333 silly isManaged C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is not inside C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules
+334 silly isManaged C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is inside C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game
+335 silly gentlyRm C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is managed by npm
+336 silly gentlyRm C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\.bin\uncss.cmd is under C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game
+337 verbose gentlyRm vacuuming C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\.bin\uncss.cmd up to C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game
+338 verbose gentlyRm verifying that C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is managed by npm
+339 silly isManaged C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is not inside C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules
+340 silly isManaged C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is not inside C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules
+341 silly isManaged C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is inside C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game
+342 silly gentlyRm C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game is managed by npm
+343 silly gentlyRm C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\.bin\uncss is under C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game
+344 verbose gentlyRm vacuuming C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\.bin\uncss up to C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game
+345 info postuninstall uncss@0.12.0
+346 verbose gentlyRm vacuuming C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\uncss
+347 silly gentlyRm purging C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules\uncss
+348 silly gentlyRm quitting because other entries in C:\Users\Hello Yemen\Desktop\collagez\web\webfinal\SPA_Game\node_modules
