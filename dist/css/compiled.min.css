@@ -1,0 +1,176 @@
+body {
+  overflow-y: scroll;
+}
+
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+/*!
+ * bootswatch v3.3.2
+ * Homepage: http://bootswatch.com
+ * Copyright 2012-2015 Thomas Park
+ * Licensed under MIT
+ * Based on Bootstrap
+*/
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  display: block;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),url('../fonts/glyphicons-halflings-regular.woff') format('woff'),url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #777777;
+  background-color: #fcfcfc;
+}
+
+.form-control::-moz-placeholder {
+  color: #dddddd;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #dddddd;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-weight: 200;
+}
+
+.startup {
+  padding-left: 450px;
+  padding-top: 50px;
+  margin: 0px auto;
+  background-color: #E0E0E0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+#draw-main-info {
+  padding: 20px;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 90%;
+  background-color: #E0E0E0;
+  border: 1px solid #C69;
+}
+
+#draw-tile-map {
+  padding: 20px;
+  margin: 0px 2%;
+  text-align: center;
+  width: 850px;
+  background-color: #E0E0E0;
+  border: 1px solid #C69;
+  float: left;
+  background-image: url("../images/game_back.jpg");
+}
+
+#draw-tile-info {
+  padding: 20px;
+  margin: 0px 2%;
+  text-align: center;
+  width: 350px;
+  background-color: #E0E0E0;
+  border: 1px solid #C69;
+  position: relative;
+  float: left;
+}
+
+#game {
+  width: 1340px;
+  height: 750px;
+}

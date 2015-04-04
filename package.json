@@ -1,30 +1,36 @@
 {
   "name": "SPA_Game",
   "version": "1.0.0",
-  "description": "A Backbone SPA Simulation Game",
-  "main": "Gruntfile.js",
+  "description": "Build an Island Browser Game with Backbone",
+  "main": "start.html",
   "dependencies": {
+    "chalk": "^0.5.1",
     "grunt": "^0.4.5",
-    "grunt-run": "^0.3.0"
+    "grunt-available-tasks": "^0.5.7",
+    "grunt-banner": "^0.3.1",
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.11.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-processhtml": "^0.3.7",
+    "grunt-uncss": "^0.3.8",
+    "uncss": "^0.8.1",
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-template-module": "^0.5.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Yemeni/SPA_Game.git"
-  },
   "keywords": [
-    "backbone",
+    "island",
+    "browser",
     "game",
-    "spa",
+    "backbone",
     "javascript"
   ],
   "author": "Yousef Adel",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Yemeni/SPA_Game/issues"
-  },
-  "homepage": "https://github.com/Yemeni/SPA_Game"
+  "license": "ISC"
 }
