@@ -1,4 +1,4 @@
-# webfinal
+# Single page application game
 Backbone JS SPA Simulation Game
 
 - the playaer can initialize a game with inputted user name & amount of resource(wood, stone & blanks)
