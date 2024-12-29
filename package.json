@@ -1,6 +1,6 @@
 {
   "name": "SPA_Game",
-  "version": "1",
+  "version": "1.0.0",
   "description": "Build an Island Browser Game with Backbone",
   "main": "start.html",
   "dependencies": {
